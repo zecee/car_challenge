@@ -1,24 +1,32 @@
-# README
+# CarChallenge API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+API REST en Ruby on Rails con autenticación mediante JWT. Permite a usuarios registrarse, iniciar sesión, ver autos, y marcarlos como favoritos.
 
-Things you may want to cover:
+---
 
-* Ruby version
+## Instalación
 
-* System dependencies
+1. Cloná el repositorio:
 
-* Configuration
+```bash
+git clone https://github.com/zecee/car_challenge.git
+cd car_challenge
+```
 
-* Database creation
+## Instalar dependencias:
+```bash
+bundle install
+```
+## Crear y setear la base de datos:
+```bash
+bin/rails db:setup
+```
 
-* Database initialization
+## Levantar el servidor:
 
-* How to run the test suite
+```bash
+rails server
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+La API estará disponible en http://localhost:3000.
 
-* Deployment instructions
-
-* ...
