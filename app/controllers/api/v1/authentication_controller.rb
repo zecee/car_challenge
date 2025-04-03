@@ -2,7 +2,7 @@ class Api::V1::AuthenticationController < ActionController::API
   def register
     user = User.new(user_params)
     if user.save
-      head :ok
+      render json: { message: "Usuario creado exitosamente" }, status: :created
     else
       render json: { errors: user.errors.full_messages }, status: :unprocessable_entity
     end
